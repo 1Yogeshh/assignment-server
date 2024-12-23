@@ -11,7 +11,7 @@ const app = express();
 // Middleware
 app.use(
   cors({
-    origin: ['https://auth-verify.vercel.app/', 'http://localhost:3000'],
+    origin: ['https://auth-verify.vercel.app', 'http://localhost:3000'],
     credentials: true,
   })
 );
