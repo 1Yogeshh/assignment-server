@@ -9,7 +9,7 @@ const authRoutes = require('./routes/auth');
 const app = express();
 
 // Middleware
-app.use(cors());
+app.use(cors({ origin: ['https://alumniti-app.vercel.app','http://localhost:3000'], credentials: true }));
 app.use(bodyParser.json());
 
 // Routes
